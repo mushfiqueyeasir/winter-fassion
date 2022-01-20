@@ -26,6 +26,24 @@
 {
     transform: scale(1.02);
 }
+.wavy{
+    position: relative;
+    display: inline-block;
+    columns: #fff;
+    animation: animate 1.5s ease-in-out infinite;
+}
+@keyframes animate{
+    0%
+    {transform: translateY(0px);
+    }
+    20%
+    {
+        transform: translateY(-10px);
+    }
+    40%,100%{
+        transform: translateZ(0px);
+    }
+}
 
   /* header styles */
   header{
