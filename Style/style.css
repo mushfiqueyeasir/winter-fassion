@@ -1,0 +1,158 @@
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter&family=Lobster&family=Manrope&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:wght@400;500&family=Yeseva+One&display=swap');
+
+
+:root {
+    --headerColor: #FFFBF0;
+    --bodyColor: #FFFFFF;
+    --buttonColor: #A4BC46;
+    --buttonHoverColor:#c0e721;
+    --headerTitleColor: #FABE4C;
+    --titleColor: #363958;
+    --fontColor: #3E3E3E;
+    --priceColor: #FABE4C;
+    --navBarFontColor: #3C3C3C;
+    --cardBackgroundColor:#F1F1F1;
+  }
+
+  /* animation style */
+  .zoom
+{
+  position: relative;
+  transition: transform 0.3s ease;
+  transform: translateY(0px); 
+}
+.zoom:hover
+{
+    transform: scale(1.02);
+}
+
+  /* header styles */
+  header{
+      background-color: var(--headerColor);
+  }
+ 
+  .collapse a{
+      color: var(--navBarFontColor);
+      font-family: 'Roboto', sans-serif;
+      font-size: 16px;
+      font-weight: 500;
+  }
+  .collapse a:hover{
+      color: var(--buttonColor);
+  }
+  .collapse li{
+      margin-left: 28.5px;
+      margin-right: 28.5px;
+  }
+  
+.navbar-toggler:focus {
+    text-decoration: none;
+    outline: 0;
+    box-shadow:none;
+}
+
+  .banner-discriptions{
+      margin-right: 8.5rem;
+  }
+  .banner-discriptions h1{
+    font-family: 'Bebas Neue', cursive;
+    font-size: 80px;
+    line-height: 96px;
+    color: var(--headerTitleColor);
+    font-style: normal;
+    font-weight: normal;
+    width: 416px
+  }
+  .banner-discriptions span{
+      color: var(--titleColor);
+  }
+  .banner-discriptions p{
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    line-height: 26px;
+    max-width: 375px;
+  }
+.btn-grad {background-image: linear-gradient(to right, #ADD100 0%, #7B920A  51%, #ADD100  100%)}
+.btn-grad {
+   padding: 18px 33px;
+   text-align: center;
+   text-transform: uppercase;
+   transition: 0.5s;
+   background-size: 200% auto;
+   color: white;            
+   box-shadow: 0 0 20px #eee;
+   border-radius: 10px;
+   display: block;
+   height: 60px;
+   width: 170px;
+   font-family: 'Roboto', sans-serif;
+   font-size: 0.89rem;
+ }
+
+ .btn-grad:hover {
+   background-position: right center; /* change the direction of the change here */
+   color: #fff;
+   text-decoration: none;
+ }
+
+ /* Product section styles */
+ .product-section-title{
+    font-family: 'Bebas Neue', cursive;
+    color: var(--titleColor);
+    font-size: 48px;
+    font-weight: 400;
+    line-height: 57.6px;
+ }
+ .cardbg{
+     background-color: var(--cardBackgroundColor);     
+ }
+ .round{
+     border-radius: 20px;
+ }
+ .row h5{
+    color: var(--titleColor);
+    font-family: 'Roboto', sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+}
+.row p{
+    color: var(--fontColor);
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    font-weight: normal;
+}
+
+ .row h2{
+     color: var(--priceColor);
+     font-family: 'Roboto', sans-serif;
+     font-size: 36px;
+     font-weight: 900;
+ }
+
+
+ @media only screen and (max-width: 576px) {
+    .logo{
+        width: 192.75px;
+        height: 26px;
+    }
+ 
+    .banner-discriptions h1{
+        font-size: 60px;
+        line-height: 72px;       
+        width: 312px
+      }
+      .banner-discriptions p{       
+        width: 295px;
+      }
+
+      .product-section-title{
+        font-size: 36px;
+        font-weight: normal;
+        line-height: 43px;
+     }
+     .about-img{
+         height: 173px;
+         width: 292.67px;
+     }
+  }
